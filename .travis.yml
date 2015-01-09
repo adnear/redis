@@ -33,7 +33,7 @@ env:
 
 # Redis testing needs tcl
 install:
-    - sudo apt-get install tcl libc6-dev-i386 valgrind -y
+    - sudo apt-get install tcl libc6-dev-i386 libc6-dbg:i386 valgrind -y
     - gem install redis
 
 # We start from inside src so -j is evaluated properly
